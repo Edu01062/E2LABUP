@@ -1,0 +1,36 @@
+{% block title %}
+    RESULTADOS
+{% endblock %}
+
+{% block content %}
+{% if player.id_in_group == 1 %}
+        <p>
+            <div>
+                Tu rol fue ser el jugador A
+            </div>
+            <div>
+                Dotación: {{ C.ENDOWMENT }}
+            </div>
+            <div>
+                Monto enviado al participante de rol B: {{ group.sent_amount }}.
+            <div>
+                Monto enviado triplicado: 
+            </div>
+                {{player.payoff}}
+            </div>
+        </p>
+        {{ next_button }}
+        {% else %}
+        <p>
+            <div>
+                Tu rol fue ser el jugador B
+            </div>
+            <div>
+                Monto enviado al participante de rol A: {{ group.sent_amount }}.
+            </div>
+        </p>
+        {{ next_button }}
+    {% endif %}
+{% endblock %}
+
+

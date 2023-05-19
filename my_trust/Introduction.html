@@ -1,0 +1,42 @@
+{{ block title }}Instrucciones{{ endblock }}
+{{ block content }}
+
+<div class="card bg-light m-3">
+    <div class="card-body">
+        <div class="centrado">
+            <h3>Instrucciones</h3>
+            <div>
+                <p>
+                    En esta parte del experimento vas a participar en 1 rondas de la misma interacción. Al inicio de una ronda, cada participante será emparejado con otro participante. Este emparejamiento se realizará al azar y de forma anónima. Es decir, cada uno tendrá una contraparte pero no sabrá quién es ni durante ni después del experimento. Su identidad tampoco será revelada a su contraparte.
+                    Luego, se asignarán dos tipos de roles A y B. En cada par, uno de los miembros tendrá el <strong>rol A</strong>, mientras que el otro tendrá el <strong>rol B</strong>.
+                    Los roles serán asignados al azar y ambos jugarán como ambos roles en una misma ronda, es decir, jugarán como si se les hubiera asignado tanto el rol A y el rol B. Una vez que acaben con las decisiones para ambos jugadores, se les dirá cuál de los dos roles
+                    tuvieron en el juego y se asignarán los pagos de acuerdo a ello.
+                </p>
+            </div>
+            <h3>Decisiones de los Roles A y B</h3>
+            <div>
+                <p>
+                    El participante de rol A recibirá 10 como dotación, mientras que el participante B no recibirá nada. El participante en rol A debe decidir cuánto enviar de dicho monto (10) al participante en rol B (este es el "monto enviado"). Antes que B reciba ese monto, la cantidad enviada será multiplicada por 3. Después de recibir el monto triplicado, rol B debe decidir qué parte del monto enviado
+                    triplicado desea enviar de retorno a su contraparte en rol A (este es el "monto retornado").
+                </p>
+            </div>
+            <h3>Pagos</h3>
+            <div>
+                <p>
+                    El participante en rol A recibirá como pago de la ronda el monto que NO envió a rol B, más el monto que le fue retornado por rol B. Esto es, <strong>el pago de la ronda para rol A es: 10 - monto enviado + monto retornado</strong>. Asimismo, el participante en rol B recibirá como pago de la ronda el monto enviado triplicado menos el monto retornado al rol A. <strong>Esto es, el pago de la ronda para rol B es: 3 * monto enviado - monto retornado</strong>. Una página de resultados de la ronda mostrará el resultado de las decisiones en cada par.
+                    Ejemplo: Si la dotación es de 10 y rol A envía 5 a rol B (monto enviado=5; lo que hace que monto enviado triplicado sea 15). Si rol B decide enviar de regreso 7 de esos 15 soles, entonces los pagos de la ronda son: Pago de la ronda para rol A: 10-5+7 = 12. Pago de la ronda para rol B: 15-7 = 8.
+                </p>
+            </div>
+            <div>
+                <p>
+                    Las instrucciones permanecerán en pantalla en caso desees consultarlas durante la interacción...
+                </p>
+            </div>
+            <link rel="stylesheet" type="text/css" href="estilo.css">
+        </div>
+    </div>
+</div>
+
+    {{ next_button }}
+
+{{ endblock }}
